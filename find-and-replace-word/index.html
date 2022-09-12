@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Use our Find and Replace word Online tool to easily Find multiple words and Replace them with some other words in your text. Click here!">
+
+    <title>Find and Replace Text - TutorialsDuniya.com</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.tutorialsduniya.com/bootstrap.min.css">
+    <link rel="stylesheet" href="../etools.css">
+    <link rel="stylesheet" href="find-replace.css">
+    <link rel="icon" href="../siteicon.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div class="">
+            <nav class="navbar navbar-expand-md navbar-dark bgDarkViolet pl-3 p-1 pl-md-10">
+                <a class="navbar-brand" href="/"><span class="fa fa-home fa-lg"></span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link b" target="_blank" href="/">item Number 1</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="row mainsection">
+        <div class="maincol col col-lg-8 col-md-10 col-sm-12 col-12">
+            <br/>
+            <div class="px-sm-8 bgWhite p-5" style="border: 1px solid rgba(0, 0, 0, .2);">
+                <h1 class="b py-5 white bgBlue text-center" style="font-size: 1.6rem;">Find and Replace Word</h1>
+                <p class="d-none">Find and Replace word Online tool to easily Find multiple words and Replace them with some other words in your text.</p>
+            
+                <label class="pt-4">Please write or paste your original text:</label>
+                <textarea id="inputtext" class="form-control w-100" rows="8" style="border: 2px solid blue;" placeholder="Please write or paste your original text in this box"></textarea><br/>
+                <div class="row mx-auto">
+                    <div class="col-md-4" id="findthisbox">
+                        <label for="toReplace">What to Replace ?</label>
+                        <input type="text" id="findthis" name="toReplace" class="form-control" style="border: 2px solid brown;" placeholder="What to Replace ?">
+                    </div>
+                    <div class="col-md-4" id="casebox">
+                        <div class="pt-8 d-flex text-center">
+                            <p class="" id="switchheading">Match Text Case: &nbsp;</p>
+                            <label for="casebtn" class="switch">
+                                <input type="checkbox" id="casebtn" name="casebtn" title="Match Text Case">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4" id="replacewithbox">
+                        <label for="replaceWith">Replace with ?</label>
+                        <input type="text" id="replacewith" name="replaceWith" class="form-control" style="border: 2px solid brown;" placeholder="Replace with ?">
+                    </div>
+                </div>
+                <br/>
+            
+                <p>Your output with replaced text:</p>
+                <textarea id="outputtext" class="form-control w-100" rows="8" style="border: 2px solid green;" placeholder="Your output will come in this box"></textarea>
+                <br/>
+            </div>
+            
+            <br/>
+            <div class="px-sm-8 bgWhite p-5" style="border: 1px solid rgba(0, 0, 0, .2);">
+                <h2 class="b text-center" style="font-size: 1.2rem;">About our Find and Replace Word Tool</h2><hr/>
+                <p>Our Find and Replace Word Tool is a simple free online tool that will help you to easily find multiple words and replace them with some other words in your text you wish to replace with.</p>
+                <hr/>
+                <h2 class="b text-center" style="font-size: 1rem;">How to use our Find and Replace Word Tool ?</h2>
+                <ul class="">
+                    <li class="pt-2">First of all, write or paste your original text in the first box.</li>
+                    <li class="pt-2">In the next box, write the word which you want to replace from your text.</li>
+                    <li class="pt-2">Then, write the word which you want to insert in your text.</li>
+                    <li class="pt-2">By default, our tool is case-insensitive. If you want to use case sensitivity, just click on the "Match Case" button.</li>
+                    <li class="pt-2">Now, in the last box you can get your new text.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="mt-2 bgBlack white">
+            <div class="pt-sm-2 p-2 p-sm-0 col col-lg-12 col-md-12 col-sm-12 col-12"
+                style="border: 5px solid #0face0;">
+                <p class="text-center b" style="font-size: 22px">Made by ABHISHEK &nbsp;<img width="35px"
+                        src="https://cdn.countryflags.com/thumbs/india/flag-heart-3d-250.png" /> <a class="red" target="_blank" href="https://www.tutorialsduniya.com/">TutorialsDuniya.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Use our YouTube Thumbnail Downloader to easily preview or download YouTube Video Thumbnails in many image qualities LQ, MQ, SD, HD, Full HD">
+
+    <title>YouTube Thumbnail Downloader - TutorialsDuniya.com</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.tutorialsduniya.com/bootstrap.min.css">
+    <link rel="stylesheet" href="../etools.css">
+    <link rel="icon" href="../siteicon.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div class="">
+            <nav class="navbar navbar-expand-md navbar-dark bgDarkViolet pl-3 p-1 pl-md-10">
+                <a class="navbar-brand" href="/"><span class="fa fa-home fa-lg"></span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link b" target="_blank" href="/">item Number 1</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="row mainsection">
+        <div class="maincol col col-lg-8 col-md-10 col-sm-12 col-12">
+            <br/>
+            <div class="px-sm-8 bgWhite p-5" style="border: 1px solid rgba(0, 0, 0, .2);">
+                <h1 class="b py-5 white bgRed text-center" style="font-size: 1.6rem;">YouTube Thumbnail Downloader</h1>
+            
+                <p class="d-none">YouTube Thumbnail Downloader to easily preview or download YouTube Video Thumbnails in many image qualities LQ, MQ, SD, HD, Full HD</p>
+            
+                <p class="p-2 text-center">Please enter URL of the YouTube video to download thumbnail in all sizes</p>
+                <div class="mx-5 text-center">
+                    <form onsubmit="event.preventDefault(); initDownloadLinks();">
+                        <input class="d-block w-100 p-2 text-center" style="border: 2px solid #0face0;" id="input-text" placeholder="https://www.youtube.com/watch?v=Urp6hxk4sPs" type="text" /><br/>
+                        <button class="btn btn-success" id="submitButton" type="submit"><b>Generate Thumbnails</b></button>
+                    </form>
+                </div><br/>
+            
+                <div class="">
+                    <h4 class="text-center">Low Quality (320x180)</h4>
+                    <div class="text-center">
+                        <img class="img-thumbnail img-responsive" style="max-width: 65%;" id="thumbnailmqimg" src="https://1.bp.blogspot.com/-8XkT9okNrvE/Xd045gaiUGI/AAAAAAAAAaU/uvzj_DnThhk8E0BSIfeoGQTP8IQo48ghACEwYBhgL/s1600/YouTube-Thumbnail-Downloader.jpg" alt="Youtube Thumbnail Low Quality Downloader (320x180) size" title="Youtube Thumbnail Low Quality Downloader (320x180) size" />
+                        <br/>
+                        <a id="thumbnailmq" class="mt-4 btn btn-sm btn-primary font-weight-bold" href="" target="_blank" download>Download Thumbnail</a>
+                    </div><br/>
+                    <h4 class="text-center">Medium Quality (480x360)</h4>
+                    <div class="text-center">
+                        <img class="img-thumbnail img-responsive" style="max-width: 75%;" id="thumbnailhqimg" src="https://1.bp.blogspot.com/-8XkT9okNrvE/Xd045gaiUGI/AAAAAAAAAaU/uvzj_DnThhk8E0BSIfeoGQTP8IQo48ghACEwYBhgL/s1600/YouTube-Thumbnail-Downloader.jpg" alt="Youtube Thumbnail Medium Quality Downloader (480x360) size" title="Youtube Thumbnail Medium Quality Downloader (480x360) size" />
+                        <br/>
+                        <a id="thumbnailhq" class="mt-4 btn btn-sm btn-primary font-weight-bold" href="" target="_blank" download>Download Thumbnail</a>
+                    </div><br/>
+                    <h4 class="text-center">HD Quality (640x480)</h4>
+                    <div class="text-center">
+                        <img class="img-thumbnail img-responsive" style="max-width: 85%;" id="thumbnailsdimg" src="https://1.bp.blogspot.com/-8XkT9okNrvE/Xd045gaiUGI/AAAAAAAAAaU/uvzj_DnThhk8E0BSIfeoGQTP8IQo48ghACEwYBhgL/s1600/YouTube-Thumbnail-Downloader.jpg" alt="Youtube Thumbnail HD Quality Downloader (640x480) size" title="Youtube Thumbnail HD Quality Downloader (640x480) size" />
+                        <br/>
+                        <a id="thumbnailsd" class="mt-4 btn btn-sm btn-primary font-weight-bold" href="" target="_blank" download>Download Thumbnail</a>
+                    </div><br/>
+                    <h4 class="text-center">Full HD Quality (1280x720)</h4>
+                    <div class="text-center">
+                        <img class="img-thumbnail img-responsive" style="max-width: 100%;" id="thumbnailmaxresimg" src="https://1.bp.blogspot.com/-8XkT9okNrvE/Xd045gaiUGI/AAAAAAAAAaU/uvzj_DnThhk8E0BSIfeoGQTP8IQo48ghACEwYBhgL/s1600/YouTube-Thumbnail-Downloader.jpg" alt="Youtube Thumbnail Full HD Quality Downloader (1280x720) size" title="Youtube Thumbnail Full HD Quality Downloader (1280x720) size" />
+                        <br/>
+                        <a id="thumbnailmaxres" class="mt-4 btn btn-sm btn-primary font-weight-bold" href="" target="_blank" download>Download Thumbnail</a>
+                    </div><br/>
+                </div>
+            </div>
+            
+            <br/>
+            <div class="px-sm-8 bgWhite p-5" style="border: 1px solid rgba(0, 0, 0, .2);">
+                <h5 class="text-center b">What is a YouTube Thumbnail ?</h5>
+                <p class="text-justify">YouTube Video thumbnails let viewers see a quick snapshot of your video as they're browsing YouTube.</p>
+                <p class="text-justify">Generally, YouTube generates the thumbnail automatically for your video but if you don't like auto generated thumbnail then you can upload your custom thumbnail also.</p>
+                <p class="text-justify">The ideal ratio of your thumbnail should be 16:9 as it is the standard for most of the YouTube previews and the size of a thumbnail should not exceed above from 2MB.</p>
+                <hr/>
+                <h5 class="text-center b">About our YouTube Thumbnail Downloader</h5>
+                <p class="text-justify">Our YouTube thumbnail downloader is a free, fast and secure YouTube video thumbnail image grabber which allows you to easily view or download thumbnails in all size of any video from YouTube.com on your android smartphone, iPhone, Tablet, Laptop, Computer etc.</p>
+                <h6 class="">YouTube thumbnail sizes are:</h6>
+                <ul class="pl-7">
+                    <li class="">Low Quality (320x180)</li>
+                    <li class="pt-2">Medium Quality (480x360)</li>
+                    <li class="pt-2">HD Quality (640x480)</li>
+                    <li class="pt-2">Full HD Quality (1280x720)</li>
+                </ul>
+                <hr/>
+                <h5 class="text-center b">How to use our YouTube Thumbnail Downloader Tool</h5>
+                <p class="text-justify">You can easily download thumbnail of a YouTube video by following steps:</p>
+                <ul class="text-justify pl-7">
+                    <li class="">Go to <a href="https://www.youtube.com" target="_blank">YouTube.com</a> and copy URL of your desired video.</li>
+                    <li class="pt-2">Paste the URL in the input box given above and click on "<i>Generate Thumbnails</i>" button.</li>
+                    <li class="pt-2">Now, our website will generate thumbnails in many different qualities.</li>
+                    <li class="pt-2">You can easily download any thumbnail by clicking on the "<i>Download Thumbnail</i>" button.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="mt-2 bgBlack white">
+            <div class="pt-sm-2 p-2 p-sm-0 col col-lg-12 col-md-12 col-sm-12 col-12"
+                style="border: 5px solid #0face0;">
+                <p class="text-center b" style="font-size: 22px">Made by ABHISHEK &nbsp;<img width="35px"
+                        src="https://cdn.countryflags.com/thumbs/india/flag-heart-3d-250.png" /> <a class="red" target="_blank" href="https://www.tutorialsduniya.com/">TutorialsDuniya.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

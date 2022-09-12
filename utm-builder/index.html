@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Use our UTM Builder to create Google Analytics campaign tracking URLs, so you can track Custom Campaigns in Google Analytics for your website/Ads">
+
+    <title>UTM Builder - TutorialsDuniya.com</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.tutorialsduniya.com/bootstrap.min.css">
+    <link rel="stylesheet" href="../etools.css">
+    <link rel="icon" href="../siteicon.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div class="">
+            <nav class="navbar navbar-expand-md navbar-dark bgDarkViolet pl-3 p-1 pl-md-10">
+                <a class="navbar-brand" href="/"><span class="fa fa-home fa-lg"></span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link b" target="_blank" href="/">item Number 1</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="row mainsection">
+        <div class="maincol col col-lg-8 col-md-10 col-sm-12 col-12">
+            <br/>
+            <div class="px-sm-8 bgWhite p-5" style="border: 1px solid rgba(0, 0, 0, .2);">
+                <h1 class="b py-5 white bgBlue text-center" style="font-size: 1.6rem;">UTM Builder</h1><br/>
+            
+                <p class="d-none">UTM Builder to create Google Analytics campaign tracking URLs, so you can track Custom Campaigns in Google Analytics for your website/Ads</p>
+            
+                <form action="#generated_url">
+                    <label for="url">Enter your URL *</label>
+                    <input type="text" id="url" class="form-control" style="border: 0.1rem solid darkViolet; border-radius: 5px;" placeholder="Enter URL - eg. https://www.tutorialsduniya.com" required /><br/>
+                    <label for="source">Campaign Source *</label>
+                    <input type="source" id="source" class="form-control" style="border: 0.1rem solid darkViolet; border-radius: 5px;" placeholder="Campaign Source - eg. google, facebook, instagram" required /><br/>
+                    <label for="medium">Campaign Medium *</label>
+                    <input type="medium" id="medium" class="form-control" style="border: 0.1rem solid darkViolet; border-radius: 5px;" placeholder="Campaign Medium - eg. banner, email" required /><br/>
+                    <label for="name">Campaign Name *</label>
+                    <input type="name" id="name" class="form-control" style="border: 0.1rem solid darkViolet; border-radius: 5px;" placeholder="Campaign Name - eg. diwali_sale, new_year_offer" required /><br/>
+                    <label for="term">Campaign Term</label>
+                    <input type="term" id="term" class="form-control" style="border: 0.1rem solid darkViolet; border-radius: 5px;" placeholder="Campaign Term - eg. paid keywords" /><br/>
+                    <label for="content">Campaign Content</label>
+                    <input type="content" id="content" class="form-control" style="border: 0.1rem solid darkViolet; border-radius: 5px;" placeholder="Campaign Content (any optional content)" /><br/>
+                </form>
+                <button id="submit" onclick="generate_url()" class="btn btn-success d-block mx-auto font-weight-bold">Generate UTM URL</button>
+            
+                <br/>
+            
+                <p>Your generated UTM URL will be shown below:</p>
+                <div class="clearfix p-5 p-sm-2" style="border: 2px solid blue">
+                    <p id="generated_url" class="b red"></p>
+                </div>
+                <br/>
+            </div>
+            
+            <br/>
+            <div class="px-sm-8 bgWhite p-5" style="border: 1px solid rgba(0, 0, 0, .2);">
+                <h2 class="b text-center" style="font-size: 1.2rem;">About our UTM Builder Tool</h2><hr/>
+                <p>UTM stands for Urchin Tracking Module. It is used to track your campaign URLs by Google Analytics and many other analytics softwares.</p>
+                <p class="text-justify">Our UTM Campaign Builder Tool allows you to easily build UTM tracking codes to track your campaign performance in Google Analytics or in any other analytics software.</p>
+                <p class="text-justify">If you are running multiple campaigns, then you can easily generate unique links to track the performance of each campaign.</p>
+                <hr/>
+                <h2 class="b text-center" style="font-size: 1rem;">UTM parameters & its types</h2>
+                <p class="text-justify">UTM parameters are tags that we add to a specific URL so that when our link is clicked by the users, then the tags are sent back to Google Analytics for tracking purposes.</p>
+                <p>There are 5 types of UTM parameters:</p>
+                <ol class="i">
+                    <li>Campaign Source (utm_source)</li>
+                    <li>Campaign Medium (utm_medium)</li>
+                    <li>Campaign Name (utm_campaign)</li>
+                    <li>Campaign Term (utm_term)</li>
+                    <li>Campaign Content (utm_content)</li>
+                </ol>
+            
+                <table class="table table-bordered table-hover table-striped mw-100">
+                    <tr class="thead-dark text-center">
+                        <th>Campaign Parameters</th>
+                        <th>Usage with Example</th>
+                    </tr>
+                    <tr>
+                        <td class="text-center">Campaign Source (utm_source)</td>
+                        <td>Used to identify the user's source such as search engine, social media platform, newsletter name, or other source.<br/><i>Example: Google, Facebook, Instagram etc</i></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">Campaign Medium (utm_medium)</td>
+                        <td>Used to identify the user's medium such as email, social media or cost-per-click.<br/><i>Example: side_banner, email etc</i></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">Campaign Name (utm_campaign)</td>
+                        <td>Used to identify the name of the Campaign for a specific product promotion or season offer.<br/><i>Example: diwali_sale, new_year_offer etc</i></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">Campaign Term (utm_term)</td>
+                        <td>Used to identify the user's term/keyword for paid search of a specific ad.<br/><i>Example: utm+builder, online+tool etc</i></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">Campaign Content (utm_content)</td>
+                        <td>Used to identify the A/B testing and content-targeted ads.<br/><i>Example: logo_link, text_link etc</i></td>
+                    </tr>
+                </table>
+            <br/>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="mt-2 bgBlack white">
+            <div class="pt-sm-2 p-2 p-sm-0 col col-lg-12 col-md-12 col-sm-12 col-12"
+                style="border: 5px solid #0face0;">
+                <p class="text-center b" style="font-size: 22px">Made by ABHISHEK &nbsp;<img width="35px"
+                        src="https://cdn.countryflags.com/thumbs/india/flag-heart-3d-250.png" /> <a class="red" target="_blank" href="https://www.tutorialsduniya.com/">TutorialsDuniya.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
